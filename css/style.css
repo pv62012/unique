@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *******=======================================================================================
+                                   navbar styling starting
+======================================================************  */
+.navbar {
+  padding: 22px 0px;
+  background-color: transparent !important;
+}
+
+.navbar-nav li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in;
+  margin-right: 10px;
+}
+.navbar-nav li a:hover {
+  color: deepskyblue !important;
+}
+.navbar-toggler {
+  border: 1px solid white !important;
+  transition: all 0.5s ease-in;
+}
+
+.navbar-toggler:hover {
+  background-color: deepskyblue !important;
+}
+.location {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 10px;
+}
+/* *======================================================================================
+                                     navbar styling end
+===============================================================================================  */
+
+/* *======================================================================================
+                                     slider styling start
+===============================================================================================  */
+.slider {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
+
+  background-size: 100% 100%;
+  color: white;
+}
+.slider-overlay {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.slider-content {
+  position: absolute;
+  top: 40%;
+
+  width: 100%;
+}
+.icons .fa {
+  font-size: 42px;
+  margin-right: 7px;
+}
+
+.btn1 {
+  padding: 10px 30px;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-top-left-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-right: -6px;
+  font-size: 13px;
+  transition: all 0.5s ease-in;
+}
+.btn1:hover {
+  color: white;
+  text-decoration: none;
+  background-color: orangered;
+}
+.btn2 {
+  padding: 10px 30px;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-bottom-right-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.5s ease-in;
+}
+.btn2:hover {
+  color: white;
+  text-decoration: none;
+  background-color: orangered;
+}
+.social-network a.fa {
+  color: white;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.5s ease-in;
+  margin-right: 10px;
+}
+.social-network a:hover {
+  color: white;
+  background-color: deepskyblue;
+}
+.slider .text,
+.slider .typed-cursor {
+  display: inline-block;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+}
+.primary {
+  color: orangered;
+}
+/* *======================================================================================
+                                     slider styling end
+===============================================================================================  */
+
+/* *======================================================================================
+                                     services styling start
+===============================================================================================  */
+.service-area {
+  margin-top: 30px;
+}
+
+.service-area p {
+  margin-bottom: -5px;
+}
+.service-wrap {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 25px 35px;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  z-index: 9;
+  margin-top: 20px;
+}
+.service-wrap::before,
+.service-wrap::after {
+  content: "";
+  height: 300%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120%;
+  z-index: -9;
+  transition: all 0.5s;
+  opacity: 0;
+  background: #34495e;
+}
+.service-wrap::before {
+  top: -37px;
+  left: 100%;
+}
+.service-wrap:hover:before {
+  left: -27px;
+  opacity: 1;
+}
+.service-wrap::after {
+  right: 100%;
+  bottom: -37px;
+}
+.service-wrap:hover:after {
+  right: -27px;
+  opacity: 1;
+}
+.service-wrap:hover {
+  color: white;
+}
+.service-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.service-wrap:hover .service-icon {
+  transform: rotate(360deg);
+}
+.service-wrap h3 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  position: relative;
+}
+.service-wrap p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+/* *======================================================================================
+                                     services styling end
+===============================================================================================  */
+
+/* *======================================================================================
+                                     work styling end
+===============================================================================================  */
+.img-responsive {
+  width: 100%;
+  height: 100%;
+}
+.img-wrapper {
+  overflow: hidden;
+}
+.img-wrapper img {
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+/* *======================================================================================
+                                     works styling end
+===============================================================================================  */
+
+/* *======================================================================================
+                                     Teams styling start
+===============================================================================================  */
+.team {
+  margin-top: 50px;
+}
+.team-member {
+  margin: 0 25px;
+}
+.team-members-info {
+  padding: 10px 0 30px 0;
+}
+.social-list {
+  padding-left: 0px;
+}
+.social-list li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+.social-list i {
+  font-size: 17px;
+  color: #64707b;
+}
+
+.team-members-name {
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding-top: 2px;
+}
+.team-members-desination {
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: #34c6d3;
+  font-weight: 700;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+/*======================================================================================
+                                     Teams styling end
+===============================================================================================  */
